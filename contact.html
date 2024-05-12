@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - coffee-shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./assets/coffee.png" alt="Koffie & co" width="100" height="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">subpagina 1</a></li>
+                            <li><a class="dropdown-item" href="#">subpagina 2</a></li>
+                            <li><a class="dropdown-item" href="#">subpagina 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+                    <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="row m-5">
+        <h1 class="col display-2 koffiebruin text-center">Contact Us</h1>
+    </header>
+
+    <div class="container">
+        <form action="#" method="post">
+            <fieldset class="row g-3 mb-3">
+                <legend class="h2 koffiebruin p-3">Gegevens</legend>
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">Voornaam <span class="koffiebruin">*</span></label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Achternaam <span class="koffiebruin">*</span></label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="mobile" class="form-label">Mobiel</label>
+                    <input type="tel" class="form-control" id="mobile">
+                </div>
+                <div class="col-md-6">
+                    <label for="birthdate" class="form-label">Geboortedatum</label>
+                    <input type="date" class="form-control" id="birthdate">
+                </div>
+            </fieldset>
+
+            <fieldset class="row g-3 mb-3">
+                <legend class="h2 koffiebruin p-3">Accountgegevens</legend>
+                <div class="col-12">
+                    <label for="email" class="form-label">E-mail <span class="koffiebruin">*</span></label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Paswoord <span class="koffiebruin">*</span></label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="confirmPassword" class="form-label">Bevestig Paswoord <span class="koffiebruin">*</span></label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="row g-3 mb-3">
+                <legend class="h2 koffiebruin p-3">Adresgegevens</legend>
+                <div class="col-12">
+                    <label for="address" class="form-label">Adres <span class="koffiebruin">*</span></label>
+                    <input type="text" class="form-control" id="address" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="postcode" class="form-label">Postcode <span class="koffiebruin">*</span></label>
+                    <input type="text" class="form-control" id="postcode" required>
+                </div>
+                <div class="col-md-5">
+                    <label for="city" class="form-label">Stad <span class="koffiebruin">*</span></label>
+                    <input type="text" class="form-control" id="city" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="country" class="form-label">Kies een land <span class="koffiebruin">*</span></label>
+                    <select id="country" class="form-select" required>
+                        <option selected>België</option>
+                        <option>Duitsland</option>
+                        <option>Frankrijk</option>
+                        <option>Luxemburg</option>
+                        <option>Nederland</option>
+                        <option>Verenigd Koninkrijk</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="row g-3 mb-3">
+                <legend class="h2 koffiebruin p-3">Koffie-achtergrond</legend>
+                <div class="col-12">
+                    <label for="coffeeType" class="form-label">Ik koop <span class="koffiebruin">*</span></label>
+                    <select id="coffeeType" class="form-select" required>
+                        <option>koffiebonen</option>
+                        <option>gemalen koffie</option>
+                        <option>oploskoffie</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="brandFan" class="form-label">En ben fan van <span class="koffiebruin">*</span></label>
+                    <select id="brandFan" class="form-select" required>
+                        <option>Illy</option>
+                        <option>Lavazza</option>
+                        <option>Starbucks</option>
+                        <option>Gran Maestro Italiano</option>
+                        <option>Celeste d’Oro</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="satisfaction" class="form-label">Hoe tevreden ben je van ons?</label>
+                    <input type="range" class="form-range" min="0" max="10" step="1" id="satisfaction">
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary mb-3">Verzenden</button>
+        </form>
+    </div>
+
+    <footer class="container-fluid text-center h6 small p-4">&copy; 2024 koffie enzo</footer>
+</body>
+
+</html>
